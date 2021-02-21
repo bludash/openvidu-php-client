@@ -19,7 +19,7 @@ const OPENVIDU_API_SECRET = 'YOUR SECRET';
 const OPENVIDU_API_PORT = 443;
 const OPENVIDU_API_USER = 'OPENVIDUAPP';
 ```
-2. And with your browser go to "http://localhost:4443/openvidu.html" or "http://example.com:443/openvidu.html"
+2. And with your browser go to "http://localhost:4443/openvidu.html" or "https://example.com:443/openvidu.html"
 
 ## Contributing
 
