@@ -1,0 +1,37 @@
+<html>
+
+<head>
+	<title>openvidu-secure-pure-js</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<script src="openvidu-browser-2.16.0.js"></script>
+	<script src="openvidu-app.js"></script>
+</head>
+
+<body>
+
+	<div id="main-container" class="container">
+		<div id="join">
+			<form class="form-group" onsubmit="joinSession(); return false">	
+				<input class="btn btn-lg btn-success" type="submit" name="commit" value="Raum 1">
+			</form>
+		</div>
+
+		<div id="session" style="display: none;">
+			<div id="session-header">
+				<h1 id="session-title"></h1>
+				<input class="btn btn-large btn-danger" type="button" id="buttonLeaveSession" onmouseup="leaveSession()" value="Leave session">
+			</div>
+			<div id="main-video" class="col-md-6">
+				<p></p>
+				<video autoplay playsinline="true"></video>
+			</div>
+			<div id="video-container" class="col-md-6"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
